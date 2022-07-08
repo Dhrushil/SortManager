@@ -1,0 +1,36 @@
+File Log: [INFO ] 2022-07-06 20:51:25,679 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 15:14:30,726 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 15:14:37,323 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 23:26:58,872 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 23:27:31,798 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 23:38:48,826 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 23:45:28,042 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-07 23:48:45,398 main <-My Logger-> - Message
+File Log: [ERROR] 2022-07-07 23:48:57,770 main <-com.sparta.factory.Start-> - null
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at com.sparta.factory.Start.generateArray(Start.java:34) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:19) ~[classes/:?]
+File Log: [ERROR] 2022-07-07 23:49:06,566 main <-com.sparta.model.BubbleSort-> - Cannot read the array length because "arrayToSort" is null
+java.lang.NullPointerException: Cannot read the array length because "arrayToSort" is null
+	at com.sparta.model.BubbleSort.sortArray(BubbleSort.java:15) ~[classes/:?]
+	at com.sparta.view.DisplayManager.printDetails(DisplayManager.java:10) ~[classes/:?]
+	at com.sparta.controller.SortManager.updateView(SortManager.java:18) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:27) ~[classes/:?]
+File Log: [INFO ] 2022-07-07 23:50:04,126 main <-My Logger-> - Message
+File Log: [ERROR] 2022-07-07 23:50:06,409 main <-com.sparta.factory.Start-> - -1
+java.lang.NegativeArraySizeException: -1
+	at com.sparta.factory.Start.generateArray(Start.java:36) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:19) ~[classes/:?]
+File Log: [ERROR] 2022-07-07 23:50:08,825 main <-com.sparta.model.BubbleSort-> - Cannot read the array length because "arrayToSort" is null
+java.lang.NullPointerException: Cannot read the array length because "arrayToSort" is null
+	at com.sparta.model.BubbleSort.sortArray(BubbleSort.java:15) ~[classes/:?]
+	at com.sparta.view.DisplayManager.printDetails(DisplayManager.java:10) ~[classes/:?]
+	at com.sparta.controller.SortManager.updateView(SortManager.java:18) ~[classes/:?]
+	at com.sparta.view.Main.main(Main.java:27) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 20:04:12,475 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-08 20:05:18,610 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-08 20:10:00,823 main <-My Logger-> - Message
