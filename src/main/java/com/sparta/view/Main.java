@@ -12,7 +12,6 @@ public class Main {
 
         while (true)
         {
-
             Start factory = new Start();
             int[] unsortedArray = factory.generateArray();
             System.out.println("Your Unsorted Random Array: " + Arrays.toString(unsortedArray));
@@ -23,11 +22,10 @@ public class Main {
             DisplayManager view = new DisplayManager();
             SortManager controller = new SortManager(model, view);
             controller.updateView(unsortedArray);
-            System.out.println("(1) Continue with same unsorted array\n(2) Get a new unsorted array\n(3) Exit");
+            System.out.println("(1) Continue\n(2) Exit");
             selection = reader.nextInt();
-            if (selection == 3) break;
-
+            if (selection == 2) break;
         }
-
     }
+
 }
