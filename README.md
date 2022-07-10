@@ -2,7 +2,12 @@
 
 The sort manager contains 3 different sections to the the code.
 
-The controller, the model, the view.
+### The controller 
+The controller handles the logic of the program and links the data from the view and model together.
+### The model 
+The model stores the data needed for the program.
+### The view
+The view visualises and outputs the information that is gathered from the data.
 
 The project contains the following 4 algorithms and you have the ability to compare them with each other.
 
@@ -48,4 +53,42 @@ which by subsition results in the worst case of `O(n^2)`
 and has a best case of `Ω(n)`
 
 ## Comparision
+To compare the 4 algorithms I ran the sort manager 5 times on a random unsorted array of size n where n is a constant during the tests. 
+### `n = 8`
+- Bubble Sort: 125033.2 nanoseconds
+- Merge Sort: 122533.2 nanoseconds
+- Insertion Sort: 103133.4 nanoseconds
+- Tree Sort: 77342 nanoseconds
+
+Fastest: Insertion Sort `O(n^2)`
+### `n = 200`
+- Bubble Sort: 199459.2 nanoseconds
+- Merge Sort: 211833.2 nanoseconds
+- Insertion Sort: 343458.2 nanoseconds
+- Tree Sort: 524125 nanoseconds
+
+Fastest: Bubble Sort `O(n^2)`
+### `n = 1000`
+- Bubble Sort: 4803875.2 nanoseconds
+- Merge Sort: 605709.2 nanoseconds
+- Insertion Sort: 430791.2 nanoseconds
+- Tree Sort: 1028000 nanoseconds
+
+Fastest: Insertion Sort `O(n^2)`
+### `n = 10000`
+- Bubble Sort: 105275417.2 nanoseconds
+- Merge Sort: 4684708.2 nanoseconds
+- Insertion Sort: 17702292.2 nanoseconds
+- Tree Sort: 58654000 nanoseconds
+
+Fastest: Merge Sort `O(nlogn)`
+### `n = 100000`
+- Bubble Sort: 15237924250.2 nanoseconds
+- Merge Sort: 16304250.2 nanoseconds
+- Insertion Sort: 499077708.2 nanoseconds
+- Tree Sort: 4287245041 nanoseconds
+
+Fastest: Merge Sort `O(nlogn)`
+
+To conclude, we found out that despite merge sort and tree sort having the faster time complexity, the size of the data and the order of the array makes alot of difference. For smaller size arrays the difference in speeds is not noticiable between the 4 algorithms, however once you start working with big data the sorting algorithms that you implement start to matter and thats where time complexity becomes an issue.
 
