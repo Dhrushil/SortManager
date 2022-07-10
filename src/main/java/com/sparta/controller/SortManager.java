@@ -13,7 +13,6 @@ public class SortManager {
         this.view = view;
     }
 
-
     public void updateView(int[] unsortedArray) {
         view.printDetails(model, unsortedArray);
     }

@@ -65,7 +65,7 @@ class SortingTests {
         int[] AverageCase = {4,7,3,8,2,1,6,5};
         Assertions.assertEquals("[1, 2, 3, 4, 5, 6, 7, 8]", Arrays.toString(t1.sortArray(WorstCase)));
         Assertions.assertEquals("[1, 2, 3, 4, 5, 6, 7, 8]", Arrays.toString(t1.sortArray(BestCase)));
-      //  Assertions.assertEquals("[1, 2, 3, 4, 5, 6, 7, 8]", Arrays.toString(t1.sortArray(AverageCase)));
+        Assertions.assertEquals("[1, 2, 3, 4, 5, 6, 7, 8]", Arrays.toString(t1.sortArray(AverageCase)));
 
     }
 }

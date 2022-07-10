@@ -34,3 +34,4 @@ java.lang.NullPointerException: Cannot read the array length because "arrayToSor
 File Log: [INFO ] 2022-07-08 20:04:12,475 main <-My Logger-> - Message
 File Log: [INFO ] 2022-07-08 20:05:18,610 main <-My Logger-> - Message
 File Log: [INFO ] 2022-07-08 20:10:00,823 main <-My Logger-> - Message
+File Log: [INFO ] 2022-07-09 17:50:53,832 main <-My Logger-> - Message

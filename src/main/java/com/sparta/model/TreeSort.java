@@ -6,13 +6,15 @@ import java.util.List;
 public class TreeSort implements Sorter{
     @Override
     public int[] sortArray(int[] arrayToSort) {
+        list = new ArrayList<>();
+        root = null;
         treeins(arrayToSort);
         inorderRec(root);
         int[] sortedArray = list.stream().mapToInt(i->i).toArray();
         return sortedArray;
     }
 
-    public List<Integer> list = new ArrayList<>();
+    public List<Integer> list;
 
     class Node
     {

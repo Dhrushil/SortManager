@@ -1,6 +1,11 @@
 package com.sparta.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class MergeSort implements Sorter {
+    public static Logger logger = LogManager.getLogger(MergeSort.class);
+
     @Override
     public int[] sortArray(int[] arrayToSort) {
 
@@ -51,13 +56,20 @@ public class MergeSort implements Sorter {
 
     private int[] sort(int arr[], int l, int r)
     {
-        if (l < r) {
-            int m = l + (r-l)/2;
+        try {
+            if (l < r) {
+                int m = l + (r-l)/2;
 
-            sort(arr, l, m);
-            sort(arr, m + 1, r);
+                sort(arr, l, m);
+                sort(arr, m + 1, r);
 
-            mergeSort(arr, l, m, r);
+                mergeSort(arr, l, m, r);
+            }
+        }catch (NullPointerException e) {
+            logger.error(e.getMessage(), e);
+        }
+        catch (Exception e) {
+            logger.error(e.getMessage(), e);
         }
 
         return arr;
