@@ -1,5 +1,4 @@
 # SortManager
-# SortManager
 
 The sort manager contains 3 different sections to the the code.
 
